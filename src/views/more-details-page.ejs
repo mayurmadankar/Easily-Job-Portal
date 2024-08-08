@@ -1,0 +1,58 @@
+<div class="row ">
+    <h1 class="mb-5"><i class="bi bi-buildings"></i>
+        <%= jobObj.companyName %>
+    </h1>
+    <div class="col-12 col-md-6">
+
+        <h5><i class="bi bi-door-open"></i> Category:</h5>
+        <p class="mb-4">
+            <%= jobObj.jobcategoty %>
+        </p>
+        <h5><i class="bi bi-person-check"></i> Designation:</h5>
+        <p class="mb-4">
+            <%= jobObj.jobDesignation %>
+        </p>
+        <h5><i class="bi bi-geo-alt"></i> Location:</h5>
+        <p class="mb-4">
+            <%= jobObj.jobLocation %>
+        </p>
+        <h5><i class="bi bi-currency-rupee"></i> Package:</h5>
+        <p class="mb-4">
+            <%= jobObj.salaryRange %>
+        </p>
+
+    </div>
+    <div class="col-12 col-md-6">
+        <h5><i class="bi bi-calendar2-event"></i> Job Posted:</h5>
+        <p class="mb-4" id="jobPostedDate">
+
+        </p>
+        <h5><i class="bi bi-calendar2-x"></i> Apply By:</h5>
+        <p class="mb-4">
+            <%= jobObj.applyBy %>
+        </p>
+        <h5><i class="bi bi-arrow-up-right-square"></i> No. Of Openings:</h5>
+        <p class="mb-4">
+            <%= jobObj.numberOfOpenings %>
+        </p>
+        <h5><i class="bi bi-people"></i> No. Of Applicants:</h5>
+        <p class="mb-4">
+            <%= numberOfApplicants %>
+        </p>
+
+
+    </div>
+    <h5><i class="bi bi-laptop"></i> Skills Required</h5>
+    <p class="mb-4">
+        <%= jobObj.skillsRequired %>
+    </p>
+</div>
+<%if(locals.userEmail && jobObj.recruiterEmail === userEmail){%>
+    <a href="/update-job/<%= jobObj.id %>" class="btn my-btn mb-5 me-4">Update Job</a>
+    <button class="btn my-btn mb-5 me-4" onclick="confirmDelete('<%= jobObj.id %>')">Delete Job</button>
+    <a href="/applicants-list/<%= jobObj.id %>" class="btn my-btn mb-5 me-4">Applicants List</a>
+    <%}else{%>
+        <a href="/apply-job/<%= jobObj.id %>" class="btn my-btn mb-5">Apply Now</a>
+        <%}%>
+
+        <script src="/scripts/universal-scripts.js"></script>

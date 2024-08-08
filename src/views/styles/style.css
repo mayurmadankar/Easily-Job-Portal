@@ -1,0 +1,110 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ .my-btn{
+    text-decoration: none !important;
+    border: 1px solid black !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
+    background-color: black;
+    color: white ;
+ }
+ .my-btn:hover{
+    background-color: white;
+    color: black;
+ }
+
+ h1,h2,h3,h4,h5,h6,th {
+    color: black !important;
+    font-weight: 200 bold !important;
+}
+
+p,li,td {
+    color: black !important;
+}
+.my-form-help {
+    font-size: small;
+}
+ .navbar {
+    position: fixed !important;
+    top: 0px;
+    width: 100%;
+    backdrop-filter: blur(30px);
+    box-shadow: 8px 8px 30px rgba(227, 228, 237, 8.37); 
+    border: 1.5px solid rgba(255, 255, 255, 8.18);
+}
+#my-logo {
+    font-size: 30px !important;
+    font-weight: 500 !important;
+}
+
+nav div div ul li a {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    /* color:  !important; */
+}
+
+nav div div ul li a:hover {
+    color: black !important;
+    border-bottom: 2px solid black;
+}
+
+.content-section {
+    margin-top: 120px !important;
+}
+
+/* card section styles starts */
+.my-card {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    border: 1px solid black;
+    border-radius: 8px !important;
+    /* font-weight: bold;  */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: white; 
+}
+
+
+.my-card-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* error page 404 */
+.container.my-message-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh;  */
+}
+
+.container.my-message-page img {
+    max-width: 100%;
+}
+
+/* Form Submitted image */
+.container.my-message-pagee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh;  */
+}
+.container.my-message-pagee img {
+    max-width: 500px;
+    height: 300px;
+}
+/* styles/style.css */
+
+.nav-link {
+    color: #000; /* Original color */
+}
+
+.nav-link.active-link {
+    color: #000; /* Dark black color for active link */
+    font-weight: bold; /* Optional: make the font bold */
+}

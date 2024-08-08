@@ -1,0 +1,68 @@
+<h1 class="mb-5"><i class="bi bi-folder-plus"></i> Create New Job</h1>
+
+<form action="/create-job" method="post" class="mb-5 mt-5">
+    <div class="row">
+
+        <div class="col-12">
+            <div class="mb-5">
+                <label for="company" class="form-label"><i class="bi bi-buildings"></i> Company</label>
+                <input type="text" class="form-control" id="company" name="companyName"
+                    placeholder="Enter the company name" required>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <div class="mb-5">
+                <label class="form-label" for="category"><i class="bi bi-door-open"></i> Category</label>
+                <select class="form-select" aria-label="Default select example" id="category" name="jobCategory">
+                    <option selected>Select the job category</option>
+                    <option value="On-site">On-Site</option>
+                    <option value="Hybrid">Hybrid</option>
+                    <option value="Remote">Remote</option>
+                </select>
+            </div>
+            <div class="mb-5">
+                <label for="salary" class="form-label"><i class="bi bi-currency-rupee"></i> Salary Range</label>
+                <input type="text" class="form-control" id="salary" name="salaryRange"
+                    placeholder="Enter the salary range">
+            </div>
+            <div class="mb-5">
+                <label class="form-label" for="openings"><i class="bi bi-people"></i> Number Of Openings</label>
+                <input type="number" name="numberOfOpenings" id="openings" class="form-control">
+            </div>
+        </div>
+
+
+        <div class="col-12 col-md-6">
+            <div class="mb-5">
+                <label class="form-label" for="designation"><i class="bi bi-person-check"></i>
+                    Designation</label>
+                <select class="form-select" aria-label="Default select example" id="designation" name="jobDesignation">
+                    <option selected>Select the job designation</option>
+                    <option value="Full-Stack-Developer">Full-Stack Developer</option>
+                    <option value="Front-End-Developer">Front-End Developer</option>
+                    <option value="Back-End-Developer">Back-End Developer</option>
+                </select>
+            </div>
+            <div class="mb-5">
+                <label for="location" class="form-label"><i class="bi bi-geo-alt"></i> Location</label>
+                <input type="text" class="form-control" id="location" name="jobLocation"
+                    placeholder="Enter the job location">
+            </div>
+            <div class="mb-5">
+                <label for="lastDate" class="form-label"><i class="bi bi-calendar2-x"></i> Apply By</label>
+                <input type="date" class="form-control" id="lastDate" name="applyBy">
+            </div>
+        </div>
+
+        <div class="col-12 ">
+            <div class="mb-5">
+                <label class="form-label" for="skills"><i class="bi bi-laptop"></i> Skills Required</label>
+                <input type="text" class="form-control" id="skills" name="skillsRequired"
+                    placeholder="Enter the required skills">
+                <p class="my-form-help"><i class="bi bi-info-circle"></i> Please separate skills with commas</p>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn my-btn">Create Job</button>
+</form>

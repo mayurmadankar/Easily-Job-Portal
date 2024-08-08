@@ -1,0 +1,57 @@
+<div class="row ">
+    <div class="col-12">
+        <h1 class="mb-5"><i class="bi bi-people"></i>
+            <%=jobObj.companyName%> Applicants
+        </h1>
+        <table class="table my-table my-card">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <h5><i class="bi bi-hash"></i> ID</h5>
+                    </th>
+                    <th scope="col">
+                        <h5><i class="bi bi-person"></i> Name</h5>
+                    </th>
+                    <th scope="col">
+                        <h5><i class="bi bi-envelope"></i> Email</h5>
+                    </th>
+                    <th scope="col">
+                        <h5><i class="bi bi-telephone"></i> contact</h5>
+                    </th>
+                    <th scope="col">
+                        <h5><i class="bi bi-filetype-pdf"></i> Resume</h5>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <%if(applicantArray){%>
+
+                    <% applicantArray.forEach(applicantObj=>{ %>
+                        <tr>
+                            <th scope="row">
+                                <h5>1</h5>
+                            </th>
+                            <td>
+                                <%=applicantObj.applicantName %>
+                            </td>
+                            <td>
+                                <%=applicantObj.applicantEmail %>
+                            </td>
+                            <td>
+                                <%=applicantObj.applicantPhoneNumber %>
+                            </td>
+
+                            <td>
+                                <!-- <a href=" resume/<%=applicantObj.applicantResume%>" class="btn my-btn">Resume</a> -->
+                                <button class="btn my-btn"
+                                onclick="openResume(this.getAttribute('data-resume'))" data-resume="<%= applicantObj.applicantResume %>">Resume</button>
+                            </td>
+                        </tr>
+                        <% })%>
+                            <%}else{%>
+                                <p>No-one has applied for this job</p>
+                                <%}%>
+            </tbody>
+        </table>
+    </div>
+</div>

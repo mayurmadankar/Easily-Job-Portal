@@ -1,0 +1,39 @@
+.container {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.content {
+    line-height: 1.6;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+.company-name {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.header img {
+    width: 150px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+}
