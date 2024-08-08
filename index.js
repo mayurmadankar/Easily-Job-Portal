@@ -61,4 +61,8 @@ server.get('/logout',formController.getLogout);
 
 server.get('/api/jobStructureArray',routerController.getJobStructureArrayAPI);
 
-export default server;
+const PORT=2000;
+
+server.listen(PORT,()=>{
+    console.log('Server is listening at PORT'+" "+PORT);
+})
