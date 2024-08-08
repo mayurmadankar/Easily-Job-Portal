@@ -147,31 +147,31 @@ This Job Portal Web Application is a comprehensive platform developed using Node
 
 ### Home Page
 
-![Home Page](/src/views/images/Easily-Home-Page.jpg "Home Page")
+![Home Page](/src/views/images/Easily-Home-Page.png "Home Page")
 
 ### Create Job Page
 
-![Create Job Page](/src/views/images/Easily-Create-Job-Page.jpg "Create Job Page")
+![Create Job Page](/src/views/images/Easily-Create-Job-Page.png "Create Job Page")
 
 ### Job Details Page
 
-![Job Details Page](/src/views/images/Easily-Job-Details-page.jpg "Job Details Page")
+![Job Details Page](/src/views/images/Easily-Job-Details-page.png "Job Details Page")
 
 ### Job List Page
 
-![Job List Page](/src/views/images/Easily-Job-List-Page.jpg "Job List Page")
+![Job List Page](/src/views/images/Easily-Job-List-Page.png "Job List Page")
 
 ### Login Page
 
-![Login Page](/src/views/images/Easily-Login-Page.jpg "Login Page")
+![Login Page](/src/views/images/Easily-Login-Page.png "Login Page")
 
 ### Register Page
 
-![Register Page](/src/views/images/Easily-Register-Page.jpg "Register Page")
+![Register Page](/src/views/images/Easily-Register-Page.png "Register Page")
 
 ### Job Details Page (Recruiter)
 
-![Job Details Page (Recruiter)](/src/views/images/Easily-Rec-Job-Details-Page.jpg "Job Details Page (Recruiter)")
+![Job Details Page (Recruiter)](/src/views/images/Easily-Rec-Job-Details-Page.png "Job Details Page (Recruiter)")
 
 
 ## Author
