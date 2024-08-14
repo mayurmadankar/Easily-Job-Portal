@@ -8,6 +8,7 @@ import { uploadFile } from "./src/middleware/file-upload-middleware.js";
 // import { auth } from "./src/middleware/auth.middleware.js";
 import jwtAuth from "./src/middleware/jwt.middleware.js";
 import cookieParser from "cookie-parser";
+import loggerMiddleware from "./src/middleware/logger.omiddleware.js";
 
 const routerController = new RouterController();
 const formController = new FormController();
@@ -33,6 +34,7 @@ server.use(ejsLayouts);
 server.use(express.urlencoded({ extended: true }));
 server.use(express.static("src/views"));
 server.use(express.static("public"));
+server.use(loggerMiddleware);
 
 server.get("/", routerController.getHomePage);
 
